@@ -1,0 +1,31 @@
+{
+    "name": "ez/service",
+    "type": "library",
+    "description": "Service",
+    "keywords": ["service", "API"],
+    "homepage": "https://bitbucket.org/dereksangshi2000/ez-service",
+    "license": "MIT",
+    "authors": [
+        {"name": "Derek Li", "email": "dereksangshi2000@gmail.com.au"}
+    ],
+    "require": {
+        "ez/data-structure": "1.*",
+        "ez/util": "1.*",
+        "ez/mage-cli": "1.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://satis.internal.balancenet.com.au"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "Ez\\Service\\": "src/" }
+    },
+    "archive": {
+        "exclude": ["!vendor", "tests", "*phpunit.xml", ".travis.yml", "build.xml", "build.properties", "composer.phar"]
+    }
+}
